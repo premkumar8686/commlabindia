@@ -1,0 +1,160 @@
+*
+{
+    margin: 0px;
+    padding: 0px;
+}
+:root
+{
+    --white: #fff;
+    --black: #000;
+    --primary-color: #fff;
+    --background-color: rgba(3, 3, 55, 0.5);
+    --background-color-2: rgba(3, 3, 55, 0.7);
+    --primary-color: #d3d3d3;
+    --base-color: rgba(235, 30, 54, 1);
+}
+
+html {
+    min-height: 100%;
+    min-width: 100%;
+    font-family: 'Droid Serif', serif;
+}
+a
+{
+    text-decoration: none !important;
+}
+.mc {
+    background: url("../images/banner-bg.jpg") no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+}
+.dn
+{
+    display: none;
+}
+#container {
+    background: var(--background-color);
+    padding: 10px;
+    margin: auto;
+}
+
+header {
+    text-align: center;
+    vertical-align: middle;
+    line-height: 3rem;
+    height: 3rem;
+    background: var(--background-color-2);
+    font-size: 1.4rem;
+    color: var(--primary-color);
+}
+
+fieldset {
+    border: 0;
+    text-align: center;
+}
+
+input[type="submit"] {
+    background: var(--base-color);
+    border: 0;
+    display: block;
+    width: 70%;
+    margin: 0 auto;
+    color: var(--white);
+    padding: 0.7rem;
+    cursor: pointer;
+}
+
+input {
+    background: transparent;
+    border: 0;
+    border-left: 4px solid;
+    border-color: var(--base-color);
+    padding: 10px;
+    color: white;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+    outline: 0;
+    background: rgba(235, 30, 54, 0.3);
+    border-radius: 1.2rem;
+    border-color: transparent;
+}
+
+::placeholder {
+    color: var(--primary-color);
+}
+
+/*Media queries */
+.r_error_mc
+{
+    margin-bottom: 0rem !important;
+}
+.registration_success_message_mc
+{
+    padding: 20px;
+    background-color: #ffffff9f;
+}
+.dashboard-row-mc
+{
+    display: grid;
+    grid-template-columns: 15% 85%;
+    min-height: 100vh;
+}
+.dashboard-left
+{
+    background-image: linear-gradient(rgb(11,123,171), rgb(194,65,104));
+}
+.dashboard-left ul
+{
+    list-style: none;
+    padding: 50px 10px 10px 20px;
+} 
+.dashboard-left ul a li
+{
+    color: #fff;
+    padding-top: 30px;
+} 
+.password-mc
+{
+    position: relative;
+}
+.password-mc span
+{
+    position: absolute;
+    right: 10px;
+    bottom: 50%;
+    transform: translatey(50%);
+    color: var(--white);
+    font-size: 0.8rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media all and (min-width: 481px) and (max-width: 568px) {
+    #container {
+        margin-top: 10%;
+        margin-bottom: 10%;
+    }
+}
+    @media all and (min-width: 569px) and (max-width: 768px) {
+        #container {
+            margin-top: 5%;
+            margin-bottom: 5%;
+        }
+    }
